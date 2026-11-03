@@ -1,0 +1,79 @@
+# ==========================================
+# Python / FastAPI / Deep Learning
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Archivos pesados
+*.pth
+*.onnx
+*.pb
+
+# ==========================================
+# Node.js / React / Vite
+# ==========================================
+node_modules/
+.pnp
+.pnp.js
+coverage/
+frontend/dist/
+frontend/build/
+.vite/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==========================================
+# Archivos de Entorno y Secretos
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==========================================
+# Archivos del Sistema Operativo y Editor
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# Archivos Temporales de Pruebas (Audio / Imágenes)
+# ==========================================
+*.wav
+*.png
+*.jpg
+*.jpeg
+*.pdf
+!frontend/public/*

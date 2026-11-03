@@ -1,0 +1,92 @@
+/* Único archivo donde se definen colores. El resto del CSS solo usa var(--...). */
+:root {
+    /* Paleta oficial */
+    --bg-app: #121420;
+    --bg-surface: #1b2432;
+    --bg-elevated: #2c2b3c;
+    --bg-input: #121420;
+
+    --accent-primary: #f71d74;
+    --accent-secondary: #403f4c;
+
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-dim: #525e75;
+
+    --border-subtle: #403f4c;
+    --border-active: #f71d74;
+    --shadow-color: rgba(18, 20, 32, 0.6);
+
+    /* Tokens derivados (estados y variantes del acento) */
+    --accent-hover: #ff4d91;
+    --accent-soft: rgba(247, 29, 116, 0.14);
+    --text-on-accent: #ffffff;
+    --success: #34d399;
+    --warning: #fbbf24;
+    --danger: #f87171;
+
+    /* Tipografía */
+    --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    /* Medidas */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --header-h: 56px;
+    --gap: 12px;
+    --transition: 150ms ease;
+
+    color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: var(--bg-app);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+}
+
+button,
+input,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+:focus-visible {
+    outline: 2px solid var(--border-active);
+    outline-offset: 2px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-subtle) transparent;
+}
+
+.mono {
+    font-family: var(--font-mono);
+}
